@@ -1,63 +1,60 @@
-# spotify-platform-analysis
-Cross-platform listening behavior analysis using Spotify Web API
+# Spotify Cross-Platform Listening Behaviour Analysis
 
 ## Project Overview
-An analysis of cross-platform listening patterns on Spotify to understand how users engage with music across different devices (mobile, desktop, TV, smart speakers, wearables, automotive etc.).
 
-**Research Question:** What factors predict when a user switches from one platform to another, and how does this affect their engagement?
+A data science project investigating how listening behaviour varies across Spotify's platforms (mobile, desktop, TV, smart speakers) to inform product development decisions for Platform & Partner Experience teams.
 
-## Motivation
-This project was created to understand user behavior patterns that inform product decisions for Spotify's Platform & Partner Experience team, which optimises consumer experiences across different devices.
+**Key Research Questions:**
+1. How does listening behaviour differ across platforms?
+2. What factors predict platform choice for different listening contexts?
+3. How do engagement metrics vary by platform and time of day?
 
-## Privacy & Ethics
-- All user data is **completely anonymised** in this repository
-- User IDs are replaced with pseudonyms (User_A, User_B, etc.)
-- Raw data is excluded from version control
-- Only aggregated, anonymised insights are shared
-- All participants provided informed consent
+## Ethical Considerations
+
+This project uses data from consenting participants who authorised access to their Spotify listening history. All data is:
+- ✅ Collected with explicit consent
+- ✅ Completely anonymised in public repositories
+- ✅ Aggregated to prevent individual identification
+- ✅ Used solely for learning and research purposes
+
+See [ETHICS.md](docs/ETHICS.md) for full details.
 
 ## Project Structure
 ```
 spotify-platform-analysis/
 ├── data/
-│   ├── raw/              # Raw API responses (not in git)
-│   ├── interim/          # Intermediate processing (not in git)
-│   └── processed/        # Anonymised, analysis-ready data
-├── notebooks/
-│   ├── 01_data_collection.ipynb
-│   ├── 02_exploratory_analysis.ipynb
-│   ├── 03_statistical_modeling.ipynb
-│   └── 04_insights_summary.ipynb
-├── src/
-│   ├── data_collection.py
-│   ├── data_processing.py
-│   ├── analysis.py
-│   └── visualisation.py
-├── reports/
-│   └── figures/
-├── config/
-│   └── config.yaml
-├── requirements.txt
-└── README.md
+│   ├── raw/               # [NOT COMMITTED] Raw data from Spotify API
+│   ├── processed/         # [NOT COMMITTED] Cleaned, processed data
+│   └── anonymised/        # [COMMITTED] Anonymised, aggregated data
+├── notebooks/             # Jupyter notebooks for analysis
+├── src/                   # Python source code
+├── visualisations/        # Generated charts and graphs
+├── docs/                  # Documentation
+└── config/                # Configuration files [NOT COMMITTED]
 ```
 
-## Tech Stack
-- **Python 3.9+**
-- **Spotipy** (Spotify API wrapper)
-- **pandas** (data manipulation)
-- **scikit-learn** (statistical modeling)
-- **lifelines** (survival analysis)
-- **plotly/seaborn** (visualisation)
+## Methodology
 
-## Setup Instructions
-[Coming soon]
+See [METHODOLOGY.md](docs/METHODOLOGY.md) for detailed approach.
 
 ## Key Findings
-[Will be updated as analysis progresses]
 
-## Next Steps
-[Future work and extensions]
+_To be updated as analysis progresses_
 
----
-**Note:** This is a personal learning project created for educational purposes.
-```
+## Requirements
+
+- Python 3.9+
+- Spotify Developer Account
+- See `requirements.txt` for dependencies
+
+## Setup Instructions
+
+_Coming soon_
+
+## Author
+
+Created as part of preparation for a Data Scientist role application at Spotify's Platform & Partner Experience team.
+
+## Licence
+
+MIT Licence - See LICENCE for details
