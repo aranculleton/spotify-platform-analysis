@@ -1,0 +1,36 @@
+# Project Configuration
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  anonymised_dir: "data/anonymised"
+  
+spotify_api:
+  rate_limit_delay: 0.5  # seconds between API calls
+  max_retries: 3
+  recently_played_limit: 50  # max tracks per API call
+  
+anonymisation:
+  user_prefix: "User_"
+  
+analysis:
+  confidence_level: 0.95
+  min_sample_size: 30  # minimum sessions per user for analysis
+  
+platforms:
+  - mobile
+  - desktop
+  - tv
+  - smart_speaker
+  - web_player
+  
+contexts:
+  - active_listening
+  - passive_background
+  - commute
+  - work
+  - exercise
+  - relaxation
+  
+session:
+  gap_threshold_minutes: 30  # sessions separated by 30+ min gap
